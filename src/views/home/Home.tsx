@@ -90,7 +90,7 @@ export default function VideoPreview() {
 
   return (
     <div style={{ padding: 40 }}>
-      <video ref={videoRef} src="/video.mp4" controls width={640} />
+      <video ref={videoRef} src="/youtube-preview-progressbar/video.mp4" controls width={640} />
 
       {/* Progress bar */}
       <div
@@ -127,7 +127,7 @@ export default function VideoPreview() {
             marginTop: 10,
             width: preview.width,
             height: preview.height,
-            backgroundImage: `url(/sprites/${lod}/${lod}_M00${
+            backgroundImage: `url(/youtube-preview-progressbar/sprites/${lod}/${lod}_M00${
               preview.sheetIndex + 1
             }.jpg)`,
             backgroundPosition: `${preview.x}px ${preview.y}px`,
